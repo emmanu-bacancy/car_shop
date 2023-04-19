@@ -1,0 +1,2 @@
+class FourWheeler < Vehicle
+end

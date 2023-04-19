@@ -1,0 +1,15 @@
+<div id="<%= dom_id company %>">
+  <p>
+    <strong>Name:</strong>
+    <%= company.name %>
+  </p>
+  <p>
+    <strong>Two Wheelers:</strong>
+    <%= company.two_wheelers.collect(&:name).join(", ") %>
+  </p>
+  <p>
+    <strong>Four Wheelers:</strong>
+    <%= company.four_wheelers.collect(&:name).join(", ") %>
+  </p>
+
+</div>

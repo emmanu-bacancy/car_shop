@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Vehicles</h1>
+<%= link_to "New Two Wheeler", new_vehicle_path(type: "TwoWheeler") %>
+<%= link_to "New Four Wheeler", new_vehicle_path(type: "FourWheeler") %>
+<div id="vehicles">
+  <% @vehicles.each do |vehicle| %>
+    <%= render "vehicles/vehicle", vehicle: vehicle %>
+    <p>
+      <%= link_to "Show this vehicle", vehicle_path(vehicle) %>
+    </p>
+    <hr>
+  <% end %>
+</div>
